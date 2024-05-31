@@ -39,8 +39,8 @@
 
         // Iterate over the files and directories
         foreach ($files as $file) {
-            // Check if it's a file and if it ends with .php
-            if (is_file($directory . '/' . $file) && pathinfo($file, PATHINFO_EXTENSION) === 'php') {
+            // Check if it's a file, if it ends with .php, and if it's not index.php
+            if (is_file($directory . '/' . $file) && pathinfo($file, PATHINFO_EXTENSION) === 'php' && $file !== 'index.php') {
                 echo "<li><a href=\"$file\">$file</a></li>";
             }
         }
