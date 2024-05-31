@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Echo Statement</title>
 </head>
 <body>
     <p>Hello <?php echo "WORLD!, "?> I am Jainil Padmani...</p> <!-- this way we can integrate php in between html  -->
